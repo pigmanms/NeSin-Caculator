@@ -8,17 +8,15 @@ public class RunWindow {
 
         JFrame mainFrame = new JFrame("내신계산기 for 대한민국 9등급 내신산출제");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        int windowWidth = 500;
-        int windowHeight = 600;
 
-        mainFrame.setSize(windowWidth, windowHeight);
+        mainFrame.setSize(500, 600);
         mainFrame.setLocationRelativeTo(null);
         mainFrame.setVisible(true);
 
 
         JPanel panel = new JPanel(); //make JPanel
 
-        JTextField howManyPeopleInput = new JTextField(10); // 20 is the initial width in columns
+        JTextField howManyPeopleInput = new JTextField(10); // 10 is the initial width in columns
 
         panel.add(howManyPeopleInput); //attach JTF onto JPanel
         mainFrame.add(panel); //attach JPanel onto JFrame
@@ -45,7 +43,6 @@ public class RunWindow {
                 System.out.println("Text from JTextField: " + JTFinputText[0]); //for debugging, after debugging this should be changed to 'store-in-var'
             }
         });
-
 
 
 
